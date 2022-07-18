@@ -1,7 +1,9 @@
 <?php
 require('../../../config/connect_params.php');
 
+// Define the database*
 // Define the database
+
 $dbname = "rpwr_dev";
 
 $dbconn = pg_connect("host=$host dbname=$dbname user=$user password=$password port=$port sslmode=require")

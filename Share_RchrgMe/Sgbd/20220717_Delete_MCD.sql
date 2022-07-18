@@ -1,4 +1,5 @@
 -- CREATION OF RCHRG.ME MODEL
+-- CREATION OF RCHRG.ME MODEL
 
 -- Charges history
 DROP TABLE IF EXISTS chl_charge_history;
