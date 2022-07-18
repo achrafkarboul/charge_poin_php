@@ -1,5 +1,5 @@
 -- Creation du modèle pour la borne JDO(Free) et client JDO
--- Suppression des éléments créés
+-- Suppression des éléments crées
 Delete From chg_charges 
 Where cli_id in (Select cli_id From cli_client Where cli_name='José');
 

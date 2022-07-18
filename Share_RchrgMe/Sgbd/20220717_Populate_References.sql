@@ -1,4 +1,4 @@
--- Liste des références-- Liste des références
+-- Liste des références
 TRUNCATE TABLE ref_reference;
 -- Liste des langues supportées
 INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('LANGUAGES', 'FR', 'Français');

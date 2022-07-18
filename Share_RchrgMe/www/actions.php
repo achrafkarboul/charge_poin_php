@@ -1,7 +1,5 @@
 <?php
 // Datbase connection management
-// Datbase connection management
-
 require('./connect_db.php');
 
 

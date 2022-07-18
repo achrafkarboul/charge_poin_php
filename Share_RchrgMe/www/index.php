@@ -1,7 +1,5 @@
 <?php
  //call actions page
-//call actions page
-
  require('./actions.php');
  
  // Get params
