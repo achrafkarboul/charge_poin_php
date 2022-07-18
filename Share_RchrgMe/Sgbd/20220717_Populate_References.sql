@@ -1,0 +1,64 @@
+-- Liste des références
+TRUNCATE TABLE ref_reference;
+-- Liste des langues supportées
+INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('LANGUAGES', 'FR', 'Français');
+INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('LANGUAGES', 'EN', 'English');
+-- Liste des types de bornes
+INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('PLUG_TYPES', 'T2', 'Type 2');
+INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('PLUG_TYPES', 'T3', 'Type 3');
+INSERT INTO ref_reference(ref_type, ref_code, ref_label) VALUES ('PLUG_TYPES', 'DOMESTIC', 'Type F/E');
+
+-- Liste des messages applicatifs
+TRUNCATE TABLE msg_app_messages;
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Notify','EN','NTFY');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Charge','EN','CHRG');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Status','EN','UPDT');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Stop','EN','STOP');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Help','EN','HELP');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Thanks','EN','THANK');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Help','EN','No worries, send :\nCDRQTAVLB >Check availability\nCDRQTNTFY >Notify availability\nCDRQTCHRG >Request charge\nCDRQTSTAT >Charge follow up\nCDRQTSTOP >Stop charge\nCDRQTHELP >For help.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Hello','EN','Hi :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Welcome','EN','My pleasure :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_AskForCharge','EN','You want to charge ?');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_StationUnavailable','EN','I''m not available now.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_StationAvailable','EN','I''m available now.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserNotCharging','EN','You are not charging.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserProposeNotification','EN','You can also ask to be notified by sending CDRQTNTFY.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserCharging','EN','You are charging.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_TryLater','EN','I can''t help now sorry :-(.\nPlease try later.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_BadContent','EN','Humm, i don''t understand!\nFor help send CDRQTHELP.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_RequestCode','EN','Please confirm by sending the code displayed on the screen within 30s.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_DelayExpiredToConfirm','EN','You have not confirmed.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmCharge','EN','Request accepted.\nCharge will start once vehicule plugged.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_RequestRefused','EN','Your request is refused.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_EndOfCharge','EN','Your charge is completed now.\nPlease free the plugg for other users.\nThanks for charging with me. Enjoy :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmStopCharge','EN','You''ve asked to stop.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmRequestNotification','EN','You will be notifyed when i will be available.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_TooManyToNotify','EN','There are already too many requests for notification.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_AvailableWithin5mn','EN','You''ve requested to be notifyed, I will be available in less than 5mn :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Notify','FR','NTFY');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Charge','FR','CHRG');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Status','FR','UPDT');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Stop','FR','STOP');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('RQT_Help','FR','HELP');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Thanks','FR','THANK');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Help','FR','Pas de soucis, envoyez :\nCDRQTAVLB >Voir si disponible\nCDRQTNTFY >Notifier lorsque disponible\nCDRQTCHRG >Demande de charge\nCDRQTSTAT >Suivi de charge\nCDRQTSTOP >Stop charge\nCDRQTHELP >Pour de l’aide.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Hello','FR','Salut :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_Welcome','FR','Tout le plaisir est pour moi :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_AskForCharge','FR','Vous voulez recharger');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_StationUnavailable','FR','Je ne suis pas disponible.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_StationAvailable','FR','Je suis disponible.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserNotCharging','FR','Vous n’êtes pas en charge.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserProposeNotification','FR','Vous pouvez demander à être notifié en envoyant');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_UserCharging','FR','Vous êtes en charge.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_TryLater','FR','Navré, je ne peux pas vous aider :-(.\nEssayez plus tard.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_BadContent','FR','Humm, je ne comprends pas!\nPour de l’aide envoyez CDRQTHELP.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_RequestCode','FR','Veuillez confirmer en saisissant le code affiché sous 30 secondes.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_DelayExpiredToConfirm','FR','Vous n’avez pas confirmé.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmCharge','FR','Demande acceptée.\nLa charge demarrera une fois le câble branché.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_RequestRefused','FR','Votre demande a été refusée.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_EndOfCharge','FR','Votre charge est à présent terminée.\nVeuillez libérer la station pour les autres utilisateurs.\nMerci d’avoir chargé avec moi. A bientôt :-)');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmStopCharge','FR','Vous avez demandé l’arrêt.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_ConfirmRequestNotification','FR','Je vous notifie lorsque je redevient disponible');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_TooManyToNotify','FR','Il y a déjà beaucoup trop de demandes de notification.');
+INSERT INTO msg_app_messages(msg_code, msg_language, msg_label) VALUES ('ASWR_AvailableWithin5mn','FR','Vous avez demandé à être notifié. Je serai disponile dans moins de 5mn :-)');
